@@ -1438,10 +1438,16 @@
                     </div>
                     <div class="order-form__grid">
                         <fieldset class="fg">
-                            <input type="tel" placeholder="Phone">
+                            <input id="phone" name="phone" type="tel">
+                            <div class="fg__error">
+                                Phone is not valid
+                            </div>
                         </fieldset>
                         <fieldset class="fg">
-                            <input type="email" placeholder="E-mail">
+                            <input type="text" name="email" placeholder="E-mail">
+                            <div class="fg__error">
+                                Email is not valid
+                            </div>
                         </fieldset>
                         <button class="order-form__btn m-btn m-btn-primary">
                             <span>Send</span>
